@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using VismaTask.Controllers;
 using VismaTask.Models;
 using System.Linq;
@@ -160,8 +159,6 @@ namespace VismaTask
                 return;
             }
 
-            
-            
             string dash = new string('-', 77);
             Console.WriteLine(dash);
             Console.WriteLine(string.Format("|{0,5}|{1,20}|{2,20}|{3,6}|{4,20}|", "ID", "Name", "PortionCount", "Unit", "PortionSize"));
@@ -272,8 +269,6 @@ namespace VismaTask
                     ingredients.Add(newIngredient);
                 }
                 
-
-
                 switch (command)
                 {
                     case "menucreate":
@@ -295,8 +290,6 @@ namespace VismaTask
                 Console.WriteLine("Invalid number of parameters.");
                 return;
             }
-
-
 
             string dash = new string('-', 59);
             Console.WriteLine(dash);
@@ -378,8 +371,6 @@ namespace VismaTask
                 Console.WriteLine("Invalid number of parameters.");
                 return;
             }
-
-
 
             string dash = new string('-', 59);
             Console.WriteLine(dash);

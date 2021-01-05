@@ -25,6 +25,8 @@ namespace VismaTask.Controllers
         public RestaurantMenu CreateMenuItem(string name, List<RestaurantStock> ingredients)
         {
             int id;
+            //to somewhat imitate the behaviour of a database and avoid ID clashing, they are automatically incremented upon creation
+            //when called within the controller context
             if (MenuList.Count == 0)
             {
                 id = 1;
