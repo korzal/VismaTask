@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VismaTask", "VismaTask\VismaTask.csproj", "{24762BF8-DBCE-4753-B6AE-358E3BDA01C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VismaTaskTests", "VismaTaskTests\VismaTaskTests.csproj", "{CD300C8B-BE92-44F5-897E-C63B23925749}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{24762BF8-DBCE-4753-B6AE-358E3BDA01C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24762BF8-DBCE-4753-B6AE-358E3BDA01C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24762BF8-DBCE-4753-B6AE-358E3BDA01C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD300C8B-BE92-44F5-897E-C63B23925749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD300C8B-BE92-44F5-897E-C63B23925749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD300C8B-BE92-44F5-897E-C63B23925749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD300C8B-BE92-44F5-897E-C63B23925749}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

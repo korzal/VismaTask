@@ -1,7 +1,5 @@
-﻿using CsvHelper;
-using System;
-using System.IO;
-using System.Text;
+﻿using VismaTask.Controllers;
+
 
 namespace VismaTask
 {
@@ -10,7 +8,23 @@ namespace VismaTask
     {
         static void Main(string[] args)
         {
-            
+
+            RestaurantStockController stock = new RestaurantStockController();
+            RestaurantMenuController menu = new RestaurantMenuController(stock);
+            CustomerOrdersController order = new CustomerOrdersController(menu);
+
+            FileReader reader = new FileReader();
+            reader.RestaurantStockReader("RestaurantStock.csv", stock);
+
+            reader.RestaurantMenuReader("RestaurantMenu.csv", menu, stock.StockList);
+
+            reader.CustomerOrderReader("CustomerOrder.csv", order, menu.MenuList);
+
+            ConsoleUI ui = new ConsoleUI();
+            ui.ConsoleInputs(stock, menu, order);
+
         }
+
+        
     }
 }
